@@ -17,6 +17,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/layout/Layout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import heroRecognize from '@/assets/hero-recognize.jpg';
 
 const Recognize = () => {
   const { t } = useLanguage();
@@ -70,14 +71,27 @@ const Recognize = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary/10 via-background to-destructive/5 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            {t('recognize.title')}
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('recognize.subtitle')}
-          </p>
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={heroRecognize} 
+            alt="Healthcare professional with patient" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-transparent" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl">
+            <span className="inline-block px-3 py-1 rounded-full bg-destructive/20 text-destructive text-sm font-medium mb-4">
+              Act F.A.S.T.
+            </span>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
+              {t('recognize.title')}
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-xl">
+              {t('recognize.subtitle')}
+            </p>
+          </div>
         </div>
       </section>
 
