@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/layout/Layout';
 import { useLanguage } from '@/contexts/LanguageContext';
+import heroCommunity from '@/assets/hero-community.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -11,27 +12,37 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10 py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 mb-6">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src={heroCommunity} 
+            alt="African community together" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/20 backdrop-blur-sm px-4 py-2 mb-6">
               <Heart className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium text-primary">Stroke Awareness Africa</span>
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               {t('hero.title')}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
               {t('hero.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link to="/prevention">
                   {t('hero.cta.learn')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm">
                 <Link to="/recognize">
                   {t('hero.cta.recognize')}
                 </Link>
@@ -39,9 +50,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute -bottom-4 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Stats Section */}
