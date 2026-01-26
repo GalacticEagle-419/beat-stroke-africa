@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* Stroke Awareness Africa - Warm & Approachable Design System */
+
+@layer base {
+  :root {
+    --background: 30 50% 98%;
+    --foreground: 20 30% 15%;
+
+    --card: 30 40% 97%;
+    --card-foreground: 20 30% 15%;
+
+    --popover: 30 40% 97%;
+    --popover-foreground: 20 30% 15%;
+
+    --primary: 25 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 45% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 15% 45%;
+
+    --accent: 35 90% 60%;
+    --accent-foreground: 20 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 25% 85%;
+    --input: 30 25% 85%;
+    --ring: 25 85% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for the design */
+    --warm-orange: 25 85% 55%;
+    --warm-orange-light: 30 80% 92%;
+    --forest-green: 145 45% 42%;
+    --forest-green-light: 145 40% 92%;
+    --earth-brown: 20 30% 35%;
+    --cream: 30 50% 98%;
+    --terracotta: 15 70% 50%;
+    --gold: 42 80% 55%;
+
+    --sidebar-background: 30 40% 97%;
+    --sidebar-foreground: 20 30% 15%;
+    --sidebar-primary: 25 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 45% 42%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 30 25% 85%;
+    --sidebar-ring: 25 85% 55%;
+  }
+
+  .dark {
+    --background: 20 25% 10%;
+    --foreground: 30 30% 95%;
+
+    --card: 20 25% 12%;
+    --card-foreground: 30 30% 95%;
+
+    --popover: 20 25% 12%;
+    --popover-foreground: 30 30% 95%;
+
+    --primary: 25 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 145 45% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 20 20% 20%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 35 90% 60%;
+    --accent-foreground: 20 25% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 20% 25%;
+    --input: 20 20% 25%;
+    --ring: 25 85% 55%;
+
+    --sidebar-background: 20 25% 12%;
+    --sidebar-foreground: 30 30% 95%;
+    --sidebar-primary: 25 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 145 45% 42%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 20 20% 25%;
+    --sidebar-ring: 25 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
