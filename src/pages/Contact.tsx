@@ -42,10 +42,15 @@ const Contact = () => {
   const [hospitalSubmitted, setHospitalSubmitted] = useState(false);
 
   const africanCountries = [
-    'Nigeria', 'Ghana', 'Kenya', 'South Africa', 'Tanzania', 
-    'Uganda', 'Ethiopia', 'Senegal', 'Cameroon', 'Ivory Coast',
-    'Rwanda', 'Zambia', 'Zimbabwe', 'Botswana', 'Mozambique',
-    'DRC', 'Angola', 'Mali', 'Burkina Faso', 'Niger'
+    'Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 
+    'Cabo Verde', 'Cameroon', 'Central African Republic', 'Chad', 'Comoros', 
+    'Congo (Democratic Republic of the)', 'Congo (Republic of the)', 'Côte d'Ivoire', 
+    'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 
+    'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Lesotho', 'Liberia', 'Libya', 
+    'Madagascar', 'Malawi', 'Mali', 'Mauritania', 'Mauritius', 'Morocco', 'Mozambique', 
+    'Namibia', 'Niger', 'Nigeria', 'Rwanda', 'São Tomé and Principe', 'Senegal', 'Seychelles', 
+    'Sierra Leone', 'Somalia', 'South Africa', 'South Sudan', 'Sudan', 'Tanzania', 'Togo', 
+    'Tunisia', 'Uganda', 'Zambia', 'Zimbabwe'
   ].sort();
 
   const handleContactSubmit = (e: React.FormEvent) => {
@@ -61,6 +66,11 @@ const Contact = () => {
       return;
     }
 
+    // Forward to strokeafrica@yopmail.com
+    const subject = encodeURIComponent(contactForm.subject || 'New Contact Message');
+    const body = encodeURIComponent(`Name: ${contactForm.name}\nEmail: ${contactForm.email}\nMessage: ${contactForm.message}`);
+    window.location.href = `mailto:strokeafrica@yopmail.com?subject=${subject}&body=${body}`;
+    
     // Simulate form submission
     setContactSubmitted(true);
     toast({
@@ -81,7 +91,12 @@ const Contact = () => {
       });
       return;
     }
-
+    
+    // Forward to strokeafrica@yopmail.com
+    const subject = encodeURIComponent(`New Hospital Application - ${hospitalForm.hospitalName}`);
+    const body = encodeURIComponent(`Hospital Name: ${hospitalForm.hospitalName}\nCountry: ${hospitalForm.country}\nCity: ${hospitalForm.city}\nContact Person: ${hospitalForm.contactPerson}\nEmail: ${hospitalForm.email}\nPhone: ${hospitalForm.phone}\nServices: ${hospitalForm.services}`);
+    window.location.href = `mailto:strokeafrica@yopmail.com?subject=${subject}&body=${body}`;
+    
     // Simulate form submission
     setHospitalSubmitted(true);
     toast({
