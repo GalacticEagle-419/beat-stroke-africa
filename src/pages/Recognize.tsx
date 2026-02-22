@@ -182,10 +182,12 @@ const Recognize = () => {
           <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
             Keep this card handy - share it with family and friends. It could save a life.
           </p>
-          <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-            <Download className="mr-2 h-4 w-4" />
-            {t('common.download')} PDF
-          </Button>
+<Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-none">
+  <a href="/Stroke_Emergency_Action_Card_4x6.pdf" download="Stroke_Emergency_Action_Card_4x6.pdf" target="_blank" rel="noopener noreferrer">
+    <Download className="mr-2 h-4 w-4" />
+    {t('common.download')} PDF
+  </a>
+</Button>
         </div>
       </section>
 
