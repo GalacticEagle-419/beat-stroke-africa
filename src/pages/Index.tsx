@@ -191,7 +191,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
               <Link to="/hospitals">
-                Partner Hospitals
+                Partner Hospital
               </Link>
             </Button>
             <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-none">
