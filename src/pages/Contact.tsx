@@ -134,30 +134,7 @@ const Contact = () => {
                 </a>
               </CardContent>
             </Card>
-
-            <Card className="text-center border-none shadow-md">
-              <CardContent className="pt-6">
-                <div className="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                  <Phone className="h-6 w-6 text-secondary" />
-                </div>
-                <h3 className="font-display font-semibold mb-2">Phone</h3>
-                <a href="tel:+234123456789" className="text-muted-foreground hover:text-secondary transition-colors">
-                  +234 123 456 789
-                </a>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-none shadow-md">
-              <CardContent className="pt-6">
-                <div className="h-12 w-12 rounded-full bg-accent/30 flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <h3 className="font-display font-semibold mb-2">Location</h3>
-                <p className="text-muted-foreground">
-                  Lagos, Nigeria
-                </p>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </section>
