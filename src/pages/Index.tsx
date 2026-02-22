@@ -42,7 +42,7 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm">
+              <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-none">
                 <Link to="/recognize">
                   {t('hero.cta.recognize')}
                 </Link>
@@ -124,7 +124,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">
                   {t('pillars.prevent.desc')}
                 </p>
-                <Button asChild variant="ghost" className="group-hover:text-secondary p-0">
+                <Button asChild variant="ghost" className="group-hover:text-secondary p-0 hover:bg-transparent">
                   <Link to="/prevention" className="flex items-center">
                     {t('common.learn_more')}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -145,7 +145,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">
                   {t('pillars.recognize.desc')}
                 </p>
-                <Button asChild variant="ghost" className="group-hover:text-primary p-0">
+                <Button asChild variant="ghost" className="group-hover:text-primary p-0 hover:bg-transparent">
                   <Link to="/recognize" className="flex items-center">
                     {t('common.learn_more')}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -166,7 +166,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">
                   {t('pillars.care.desc')}
                 </p>
-                <Button asChild variant="ghost" className="p-0">
+                <Button asChild variant="ghost" className="group-hover:text-accent-foreground p-0 hover:bg-transparent">
                   <Link to="/care" className="flex items-center">
                     {t('common.learn_more')}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -194,7 +194,7 @@ const Index = () => {
                 Partner Hospitals
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-none">
               <Link to="/contact">
                 {t('nav.contact')}
               </Link>
