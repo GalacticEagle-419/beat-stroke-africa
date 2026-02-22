@@ -145,7 +145,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.quick': 'Quick Links',
     'footer.resources': 'Resources',
     'footer.connect': 'Connect',
-    'footer.copyright': '© 2024 Stroke Awareness Africa. All rights reserved.',
+    'footer.copyright': '© 2026 Stroke Awareness Africa. All rights reserved.',
     
     // Common
     'common.learn_more': 'Learn More',
@@ -290,7 +290,7 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.quick': 'Liens Rapides',
     'footer.resources': 'Ressources',
     'footer.connect': 'Connectez-vous',
-    'footer.copyright': '© 2024 Sensibilisation AVC Afrique. Tous droits réservés.',
+    'footer.copyright': '© 2026 Sensibilisation AVC Afrique. Tous droits réservés.',
     
     // Common
     'common.learn_more': 'En Savoir Plus',
