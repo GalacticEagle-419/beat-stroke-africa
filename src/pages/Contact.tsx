@@ -44,7 +44,7 @@ const Contact = () => {
   const africanCountries = [
     'Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 
     'Cabo Verde', 'Cameroon', 'Central African Republic', 'Chad', 'Comoros', 
-    'Congo (Democratic Republic of the)', 'Congo (Republic of the)', 'Côte d'Ivoire', 
+    'Congo (Democratic Republic of the)', 'Congo (Republic of the)', 'Ivory Coast', 
     'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 
     'Gambia', 'Ghana', 'Guinea', 'Guinea-Bissau', 'Kenya', 'Lesotho', 'Liberia', 'Libya', 
     'Madagascar', 'Malawi', 'Mali', 'Mauritania', 'Mauritius', 'Morocco', 'Mozambique', 
