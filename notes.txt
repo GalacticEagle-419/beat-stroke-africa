@@ -26,3 +26,68 @@ Update the CTA section to include the partner hospitals button in src/pages/Inde
           </div>
         </div>
       </section>
+
+Update the src/components/layout/Header.tsx to include the partner hospitals link (currently commented out)
+
+Update the src/components/layout/Footer.tsx to include the partner hospitals link (currently removed)
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-display font-semibold mb-4">{t('footer.quick')}</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/prevention" className="text-background/70 hover:text-primary transition-colors">
+                  {t('nav.prevention')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/recognize" className="text-background/70 hover:text-primary transition-colors">
+                  {t('nav.recognize')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/care" className="text-background/70 hover:text-primary transition-colors">
+                  {t('nav.care')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/hospitals" className="text-background/70 hover:text-primary transition-colors">
+                  {t('nav.hospitals')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+Update the src/components/layout/Footer.tsx to include a Contact section
+
+{/* Connect */}
+          <div>
+            <h4 className="font-display font-semibold mb-4">{t('footer.connect')}</h4>
+            <div className="flex gap-3">
+              <a
+                href="#"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
