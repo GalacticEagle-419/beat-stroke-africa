@@ -189,13 +189,7 @@ const Index = () => {
             you can help save lives by spreading awareness about stroke.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            //This should not be readable, come back and add the Partner Hospital button
-            //  <Button asChild size="lg" variant="secondary">  
-            //  <Link to="/hospitals">
-            //    Partner Hospital
-            //  </Link>
-            //</Button>
-              
+
             <Button asChild size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 border-none">
               <Link to="/contact">
                 {t('nav.contact')}
