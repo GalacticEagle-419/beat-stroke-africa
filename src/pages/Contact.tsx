@@ -42,7 +42,7 @@ const Contact = () => {
   const [hospitalSubmitted, setHospitalSubmitted] = useState(false);
 
   const africanCountries = [
-    'Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 
+    'Not in Africa', 'Algeria', 'Angola', 'Benin', 'Botswana', 'Burkina Faso', 'Burundi', 
     'Cabo Verde', 'Cameroon', 'Central African Republic', 'Chad', 'Comoros', 
     'Congo (Democratic Republic of the)', 'Congo (Republic of the)', 'Ivory Coast', 
     'Djibouti', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Eswatini', 'Ethiopia', 'Gabon', 
