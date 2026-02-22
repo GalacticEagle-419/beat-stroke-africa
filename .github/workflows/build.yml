@@ -1,13 +1,12 @@
-name: Build Website
+name: Build and Deploy to Spaceship
 
 on:
   push:
     branches:
-      - main  # This triggers the build every time you save/push to main
-  workflow_dispatch: # This allows you to run it manually
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +24,12 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          name: website-build
-          path: dist/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./public_html/
+          
