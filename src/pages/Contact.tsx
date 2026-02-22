@@ -66,10 +66,10 @@ const Contact = () => {
       return;
     }
 
-    // Forward to strokeafrica@yopmail.com
+    // Forward to contact@strokeafrica.org
     const subject = encodeURIComponent(contactForm.subject || 'New Contact Message');
     const body = encodeURIComponent(`Name: ${contactForm.name}\nEmail: ${contactForm.email}\nMessage: ${contactForm.message}`);
-    window.location.href = `mailto:strokeafrica@yopmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@strokeafrica.org?subject=${subject}&body=${body}`;
     
     // Simulate form submission
     setContactSubmitted(true);
@@ -92,10 +92,10 @@ const Contact = () => {
       return;
     }
     
-    // Forward to strokeafrica@yopmail.com
+    // Forward to contact@strokeafrica.org
     const subject = encodeURIComponent(`New Hospital Application - ${hospitalForm.hospitalName}`);
     const body = encodeURIComponent(`Hospital Name: ${hospitalForm.hospitalName}\nCountry: ${hospitalForm.country}\nCity: ${hospitalForm.city}\nContact Person: ${hospitalForm.contactPerson}\nEmail: ${hospitalForm.email}\nPhone: ${hospitalForm.phone}\nServices: ${hospitalForm.services}`);
-    window.location.href = `mailto:strokeafrica@yopmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@strokeafrica.org?subject=${subject}&body=${body}`;
     
     // Simulate form submission
     setHospitalSubmitted(true);
@@ -129,8 +129,8 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-display font-semibold mb-2">Email</h3>
-                <a href="mailto:info@strokeafrica.org" className="text-muted-foreground hover:text-primary transition-colors">
-                  info@strokeafrica.org
+                <a href="mailto:contact@strokeafrica.org" className="text-muted-foreground hover:text-primary transition-colors">
+                  contact@strokeafrica.org
                 </a>
               </CardContent>
             </Card>
