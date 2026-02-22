@@ -43,11 +43,6 @@ const Footer = () => {
                   {t('nav.care')}
                 </Link>
               </li>
-              <li>
-                <Link to="/hospitals" className="text-background/70 hover:text-primary transition-colors">
-                  {t('nav.hospitals')}
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -73,36 +68,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Connect */}
-          <div>
-            <h4 className="font-display font-semibold mb-4">{t('footer.connect')}</h4>
-            <div className="flex gap-3">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 hover:bg-primary transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+          
         </div>
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm text-background/60">
