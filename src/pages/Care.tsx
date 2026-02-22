@@ -165,10 +165,12 @@ const Care = () => {
           <p className="text-background/70 mb-8 max-w-xl mx-auto">
             A comprehensive guide for families caring for stroke survivors at home.
           </p>
-          <Button size="lg" variant="outline" className="border-background text-background hover:bg-background hover:text-foreground">
-            <Download className="mr-2 h-4 w-4" />
-            {t('common.download')} PDF
-          </Button>
+<Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 border-none">
+  <a href="/Family_Post_Stroke_Home_Care_Guide.pdf" download="Family_Post_Stroke_Home_Care_Guide.pdf" target="_blank" rel="noopener noreferrer">
+    <Download className="mr-2 h-4 w-4" />
+    {t('common.download')} PDF
+  </a>
+</Button>
         </div>
       </section>
 
