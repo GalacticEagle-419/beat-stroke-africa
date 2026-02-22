@@ -161,10 +161,12 @@ const Prevention = () => {
           <p className="text-secondary-foreground/80 mb-8 max-w-xl mx-auto">
             Get our comprehensive prevention guide with tips tailored for African communities.
           </p>
-          <Button size="lg" variant="outline" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-            <Download className="mr-2 h-4 w-4" />
-            {t('common.download')} PDF
-          </Button>
+          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 border-none">
+            <a href="/Stroke_Equity_Prevention_Guide_Final.pdf" download="Stroke_Equity_Prevention_Guide_Final.pdf" target="_blank" rel="noopener noreferrer">
+             <Download className="mr-2 h-4 w-4" />
+             {t('common.download')} PDF
+            </a>
+         </Button>
         </div>
       </section>
 
