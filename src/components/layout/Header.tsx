@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Heart, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import logo from '@/assets/StrokeAfricaLogo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,14 +28,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-              <Heart className="h-5 w-5 text-primary-foreground" />
-            </div>
-            <span className="font-display text-xl font-bold text-foreground">
-              Stroke<span className="text-primary">Africa</span>
-            </span>
-          </Link>
+<Link to="/" className="flex items-center gap-2">
+  <img src={logo} alt="Stroke Africa Logo" className="h-10 w-auto" />
+  <span className="font-display text-xl font-bold text-foreground">
+    Stroke<span className="text-primary">Africa</span>
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
