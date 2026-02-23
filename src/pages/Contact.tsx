@@ -122,7 +122,7 @@ const Contact = () => {
       {/* Contact Info */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="flex justify-center max-w-4xl mx-auto">
             <Card className="text-center border-none shadow-md">
               <CardContent className="pt-6">
                 <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -139,10 +139,11 @@ const Contact = () => {
         </div>
       </section>
 
+      
       {/* Forms Section */}
-      <section className="py-16 bg-muted/50">
+      {/*<section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/*<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Contact Form */}
             <Card className="border-none shadow-lg">
               <CardHeader>
@@ -351,9 +352,10 @@ const Contact = () => {
                 )}
               </CardContent>
             </Card>
-          </div>
+          </div>*/}
         </div>
-      </section>
+      </section>*/}
+      
     </Layout>
   );
 };
