@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Heart, Facebook, Twitter, Instagram, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+
 const Footer = () => {
   const { t } = useLanguage();
 
@@ -11,14 +12,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <Heart className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="font-display text-xl font-bold">
-                Stroke<span className="text-primary">Africa</span>
-              </span>
-            </div>
+<Link to="/" className="flex items-center gap-2">
+  <img src={logo} alt="Stroke Africa Logo" className="h-10 w-auto" />
+  <span className="font-display text-xl font-bold text-foreground">
+    Stroke<span className="text-primary">Africa</span>
+  </span>
+</Link>
             <p className="text-sm text-background/70">
               {t('footer.mission')}
             </p>
