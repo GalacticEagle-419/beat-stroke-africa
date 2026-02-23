@@ -175,7 +175,7 @@ const Care = () => {
       </section>
 
       {/* Next Step */}
-      <section className="py-16 bg-background">
+      {/* <section className="py-16 bg-background">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground mb-2">Find Support</p>
           <h2 className="font-display text-2xl font-bold mb-6">
@@ -189,6 +189,7 @@ const Care = () => {
           </Button>
         </div>
       </section>
+      */}
     </Layout>
   );
 };
